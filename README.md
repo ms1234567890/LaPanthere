@@ -17,3 +17,13 @@ En tapant “Entreprise web design Lyon” sur Internet, elle s’aperçoit que 
 
  tous ces éléments devront être codés en HTML et CSS. 
  Faire également attention à ce que le site soit toujours adapté à toutes les tailles d’écran.
+
+
+
+Compétences évaluées
+
+- Réaliser une recherche des bonnes pratiques en développement web
+- Optimiser la taille et la vitesse d’un site web
+- Écrire un code HTML et CSS maintenable
+- Optimiser le référencement d'un site web
+- Assurer l'accessibilité d'un site web
