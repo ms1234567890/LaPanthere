@@ -28,7 +28,6 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -46,12 +45,24 @@ a:hover {
 
 .bloc-lg {
     padding: 100px 50px;
+    margin: auto;
 }
 
 .tight-width-whitespace .col-sm-12 {
     background-color:  #2a2a2a;
     padding: 40px;
     border-radius: 5px;
+}
+
+.bloc-lg .row .col-sm-12 h1, p {
+    text-align: center;
+}
+
+.tight-width-whitespace .col-sm-6 a .portfolio-thumb {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
 }
 
 .bloc-md {
@@ -319,7 +330,14 @@ a:hover {
     z-index: 1;
 }
 
-.nav > li {
+.navbar .nav li a {
+    list-style-type: none;
+    float: left;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.nav > li  {
     list-style-type: none;
     float: left;
     margin: 10px;
@@ -506,6 +524,11 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    align-items: center;
+}
+
+.form {
+    align-items: center;
 }
 
 .scrollToTop {
@@ -711,7 +734,7 @@ p {
 
 .adresse p {
     color: white!important;
-    font-weight: blod;
+    font-weight: bold;
 }
 
 h2 {
@@ -865,13 +888,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -889,10 +912,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -901,8 +920,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
